@@ -34,7 +34,7 @@ jobs:
         run: hugo --minify
 
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3.7.3
+        uses: peaceiris/actions-gh-pages@v3
         with:
           personal_token: ${{ secrets.PERSONAL_TOKEN }}
           external_repository: allen-3/ninevolt   # Deploy to external repository on GitHub. Useful if using GitHub Free plan - make source contents private (in private repo) and deploy to public GitHub pages repo.
