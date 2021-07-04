@@ -1,5 +1,6 @@
-# baseURL = "https://allen-3.github.io/ninevolt/"
-baseURL = "http://ninevolt.xyz"
+baseURL = "https://allen-3.github.io/ninevolt/"
 languageCode = "en-us"
-theme = "hugo-xmin"
 title = "My New Hugo Site"
+theme = "hugo-xmin"
+# relativeURLs = true
+# canonifyurls = true
