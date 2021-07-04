@@ -1,0 +1,42 @@
+name: github-pages-hugo  # Name of the workflow file as it will appear in the Actions tab of the GitHub repo (optional)
+
+# Event that automatically triggers workflow
+on:
+  # Workflow runs everytime a change is pushed to the repo (but only for the `main` branch)
+  push:
+    branches: [ main ]
+  pull_request:   # Can also trigger a workflow when pull request is created
+
+# Workflow made of one or more jobs (can run sequentially or in parallel)
+jobs:
+  # Define the name of the job stored in the `jobs` section (i.e. `deploy`)
+  deploy:
+    # The type of runner the job will run on
+    runs-on: ubuntu-latest  # Job runs on an Ubuntu runner (executes on a fresh VM hosted by GitHub)
+    
+    # Groups all steps that run in the `deploy` job (each nested item is a separate action or shell command)
+    steps:
+      # `uses` keyword tells job to retrieve `v2` of the community action named `actions/checkout@v2`
+      # This action checks out your repo and downloads it to the runner, allowing you to run actions against your code
+      - uses: actions/checkout@v2
+        with:
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+          extended: true    # Use a Hugo extended version
+
+      # `run` uses the runner's shell to run a single command
+      - name: Build
+        run: hugo --minify
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          personal_token: ${{ secrets.PERSONAL_TOKEN }}
+          external_repository: allen-3/ninevolt   # Deploy to external repository on GitHub. Useful if using GitHub Free plan - make source contents private (in private repo) and deploy to public GitHub pages repo.
+          publish_branch: main    # Set a branch name to use as GitHub Pages branch. The default is gh-pages.
+          publish_dir: ./public   # The source directory to deploy to GitHub pages
