@@ -1,6 +1,11 @@
 baseURL = "https://allen-3.github.io/ninevolt/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Ninevolt"
 theme = "hugo-xmin"
 relativeURLs = true
 canonifyurls = true
+
+enableEmoji = true
+
+# [permalinks]
+# post = "/:slug/"
