@@ -1,7 +1,8 @@
 ---
 title: "Lipsum"
 date: 2021-07-10T15:37:03-04:00
-draft: true
+draft: false
+categories: ["guide"]
 ---
 
 ## Vestibulum porta at justo sed fermentum
