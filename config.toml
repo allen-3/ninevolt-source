@@ -30,3 +30,8 @@ enableEmoji = true
 
 [params]
     footer = "&copy; Allen Sun 2021"
+
+# Taxonomies
+[taxonomies]
+    tag = "tags"
+    category = "categories"
