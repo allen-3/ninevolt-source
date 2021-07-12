@@ -12,11 +12,14 @@ body {
 .menu li { display: inline-block; }
 .article-meta, .menu a {
   text-decoration: none;
-  /* background: #eee; */
   padding: 5px;
   border-radius: 5px;
-  font-feature-settings: "smcp" on;
 }
+
+.menu a {
+  color: #FFFFFF;
+}
+
 .menu, .article-meta, footer { text-align: center; }
 .title { font-size: 1.1em; }
 footer a { text-decoration: none; }

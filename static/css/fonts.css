@@ -24,8 +24,22 @@
   font-family: 'Alegreya Sans';
   src: url('../fonts/AlegreyaSans-Medium.woff2'),
        url('../fonts/AlegreyaSans-Medium.woff');
-  font-weight: 600;
+  font-weight: 500;
   font-style: normal;
+}
+
+/* Redaction */
+@font-face {
+  font-family: 'Redaction 35';
+  src: url('../fonts/Redaction_35-Regular.woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Redaction 35';
+  src: url('../fonts/Redaction_35-Italic.woff2');
+  font-weight: normal;
+  font-style: italic;
 }
 
 body {
@@ -34,4 +48,14 @@ body {
 code {
   font-family: "Lucida Console", Monaco, monospace;
   font-size: 85%;
+}
+
+.menu a:link {
+  font-size: 18px;
+  font-weight: 500;
+  font-feature-settings: "smcp" on;
+}
+
+footer {
+  font-feature-settings: "lnum" on;
 }
