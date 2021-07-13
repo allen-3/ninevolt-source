@@ -11,16 +11,34 @@ body {
 .side-layout {
   display: grid;
   grid-template-columns: 4fr 7fr;
+  column-gap: 100px;
   max-width: 1016px;
-  margin: auto;
+  margin: 48px auto;
   /* background: red; */
 }
 
+img.logo {
+  box-sizing: border-box;
+  padding: 0px 10px;
+  width: 100%;
+  height: auto;
+}
+
+.side-blurb p {
+  padding: 0px 10px;
+  color: #E7E7E7;
+  margin: 16px 0px 32px;
+}
+
 .menu { padding: 0; }
-.menu li { display: inline-block; }
+.menu li {
+  display: block;
+  text-align: left;
+  padding: 5px 10px;
+}
 .article-meta, .menu a {
   text-decoration: none;
-  padding: 5px;
+  /* padding: 5px; */
   border-radius: 5px;
 }
 
@@ -31,6 +49,9 @@ body {
 .menu, .article-meta, footer { text-align: center; }
 .title { font-size: 1.1em; }
 
+footer {
+  color: gray;
+}
 footer a { text-decoration: none; }
 hr {
   border-style: dashed;

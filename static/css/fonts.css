@@ -45,9 +45,10 @@
 body {
   font-family: Alegreya Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
-code {
-  font-family: "Lucida Console", Monaco, monospace;
-  font-size: 85%;
+
+/* header and footer areas ----------------------------------------------- */
+.side-blurb p {
+  font-size: 17px;
 }
 
 .menu a:link {
@@ -56,6 +57,13 @@ code {
   font-feature-settings: "smcp" on;
 }
 
+code {
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 85%;
+}
+
+
+
 footer {
-  font-feature-settings: "lnum" on;
+  font-feature-settings: "smcp" on;
 }

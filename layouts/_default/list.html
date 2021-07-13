@@ -3,8 +3,14 @@
 <div class="side-layout">
 
   <div class="aside-pane">
-    {{/* <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}" /> */}}
-    <img src="{{ "/images/ninevoltXYZ-logo.svg" | relURL }}" alt="ninevolt.xyz logo">
+    <img src="{{ "/images/ninevoltXYZ-logo.svg" | relURL }}" alt="ninevolt.xyz logo" class="logo">
+
+    {{if .IsHome }}
+    <div class="side-blurb">
+      {{ .Content }}
+    </div>
+    {{ end }}
+
     <nav>
       <ul class="menu">
         {{ range .Site.Menus.main }}
@@ -17,9 +23,8 @@
   <main class="list-pane">
     {{if not .IsHome }}
     <h1>{{ .Title | markdownify }}</h1>
-    {{ end }}
-
     {{ .Content }}
+    {{ end }}
 
     <ul>
       {{ $pages := .Pages }}
