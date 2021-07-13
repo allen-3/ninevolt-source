@@ -1,20 +1,38 @@
 {{ partial "header.html" . }}
 
-{{if not .IsHome }}
-<h1>{{ .Title | markdownify }}</h1>
-{{ end }}
+<div class="side-layout">
 
-{{ .Content }}
+  <div class="aside-pane">
+    {{/* <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}" /> */}}
+    <img src="{{ "/images/ninevoltXYZ-logo.svg" | relURL }}" alt="ninevolt.xyz logo">
+    <nav>
+      <ul class="menu">
+        {{ range .Site.Menus.main }}
+        <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+        {{ end }}
+      </ul>
+    </nav>
+  </div>
 
-<ul>
-  {{ $pages := .Pages }}
-  {{ if .IsHome }}{{ $pages = .Site.RegularPages }}{{ end }}
-  {{ range (where $pages "Section" "!=" "") }}
-  <li>
-    <span class="date">{{ .Date.Format "2006/01/02" }}</span>
-    <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
-  </li>
-  {{ end }}
-</ul>
+  <main class="list-pane">
+    {{if not .IsHome }}
+    <h1>{{ .Title | markdownify }}</h1>
+    {{ end }}
+
+    {{ .Content }}
+
+    <ul>
+      {{ $pages := .Pages }}
+      {{ if .IsHome }}{{ $pages = .Site.RegularPages }}{{ end }}
+      {{ range (where $pages "Section" "!=" "") }}
+      <li>
+        <span class="date">{{ .Date.Format "2006/01/02" }}</span>
+        <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
+      </li>
+      {{ end }}
+    </ul>
+  </main>
+
+</div>
 
 {{ partial "footer.html" . }}
