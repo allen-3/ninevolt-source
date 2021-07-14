@@ -3,13 +3,10 @@
 <div class="side-layout">
 
   <div class="aside-pane">
-    <img src="{{ "/images/ninevoltXYZ-logo.svg" | relURL }}" alt="ninevolt.xyz logo" class="logo">
+    <a href="{{ "/" | relURL }}"><img src="{{ "/images/ninevoltXYZ-logo.svg" | relURL }}" alt="ninevolt.xyz logo"
+        class="logo"></a>
 
-    {{if .IsHome }}
-    <div class="side-blurb">
-      {{ .Content }}
-    </div>
-    {{ end }}
+    {{ partial "side-blurb.html" }}
 
     <nav>
       <ul class="menu">
@@ -18,6 +15,14 @@
         {{ end }}
       </ul>
     </nav>
+
+    <ul class="social-links">
+      <li><a href="https://github.com/allen-3" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+      <li><a href="https://www.youtube.com/channel/UCFiD9lJzbSKQJ0EKssXvUbg" target="_blank"
+          rel="noopener noreferrer">YouTube</a></li>
+      <li><a href="https://twitter.com/9ninevolt" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+      <li><a href="mailto:sunallen33@gmail.com">Email</a></li>
+    </ul>
   </div>
 
   <main class="list-pane">

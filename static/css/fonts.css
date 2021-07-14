@@ -43,12 +43,21 @@
 }
 
 body {
-  font-family: Alegreya Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Alegreya Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+p {
+  font-size: 22px;
+  line-height: 28px;
+  margin-bottom: 18px;
+  hyphens: auto;
 }
 
 /* header and footer areas ----------------------------------------------- */
 .side-blurb p {
   font-size: 17px;
+  line-height: 20px;
+  margin-bottom: 10px;
 }
 
 .menu a:link {
@@ -57,12 +66,15 @@ body {
   font-feature-settings: "smcp" on;
 }
 
+.social-links {
+  font-size: 16px;
+  font-feature-settings: "smcp" on;
+}
+
 code {
   font-family: "Lucida Console", Monaco, monospace;
   font-size: 85%;
 }
-
-
 
 footer {
   font-feature-settings: "smcp" on;

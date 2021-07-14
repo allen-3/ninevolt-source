@@ -7,12 +7,14 @@ body {
   background: #1e1e1e;
 }
 
+
+
 /* header and footer areas ----------------------------------------------- */
 .side-layout {
   display: grid;
   grid-template-columns: 4fr 7fr;
   column-gap: 100px;
-  max-width: 1016px;
+  max-width: 1000px;
   margin: 48px auto;
   /* background: red; */
 }
@@ -24,10 +26,14 @@ img.logo {
   height: auto;
 }
 
+.side-blurb {
+  margin: 16px 0px 32px;
+}
+
 .side-blurb p {
   padding: 0px 10px;
-  color: #E7E7E7;
-  margin: 16px 0px 32px;
+  color: #d6d8dc;
+  margin: 10px 0px;
 }
 
 .menu { padding: 0; }
@@ -44,6 +50,24 @@ img.logo {
 
 .menu a {
   color: #FFFFFF;
+}
+
+.social-links {
+  margin: 0;
+  padding: 14px 10px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.social-links li {
+  /* display: inline-block; */
+  list-style-type: none;
+}
+
+.social-links a {
+  color: #acacac;
+  text-decoration: none;
 }
 
 .menu, .article-meta, footer { text-align: center; }
