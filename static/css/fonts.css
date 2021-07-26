@@ -50,7 +50,7 @@ p {
   font-size: 22px;
   line-height: 28px;
   margin-bottom: 18px;
-  hyphens: auto;
+  /* hyphens: auto; */
 }
 
 /* header and footer areas ----------------------------------------------- */

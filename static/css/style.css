@@ -3,8 +3,14 @@ body {
   margin: auto;
   padding: 1em;
   line-height: 1.5em;
-  color: #FFFFFF;
-  background: #1e1e1e;
+  color: #30363F;
+  background: #F9F9FA;
+}
+
+a {
+  color: #30363F;
+  text-decoration: none;
+  font-weight: 500;
 }
 
 
@@ -32,7 +38,7 @@ img.logo {
 
 .side-blurb p {
   padding: 0px 10px;
-  color: #d6d8dc;
+  color: #30363F;
   margin: 10px 0px;
 }
 
@@ -49,7 +55,7 @@ img.logo {
 }
 
 .menu a {
-  color: #FFFFFF;
+  color: #30363F;
 }
 
 .social-links {
@@ -66,7 +72,7 @@ img.logo {
 }
 
 .social-links a {
-  color: #acacac;
+  color: #30363F;
   text-decoration: none;
 }
 
@@ -74,7 +80,7 @@ img.logo {
 .title { font-size: 1.1em; }
 
 footer {
-  color: gray;
+  color: #99A1A6;
 }
 footer a { text-decoration: none; }
 hr {
