@@ -1,3 +1,5 @@
+/* Font definitions ------------------------------------------------------ */
+
 /* Alegreya Sans */
 @font-face {
   font-family: 'Alegreya Sans';
@@ -28,6 +30,29 @@
   font-style: normal;
 }
 
+/* Alegreya */
+@font-face {
+  font-family: 'Alegreya';
+  src: url('../fonts/Alegreya-Regular.woff2'),
+       url('../fonts/Alegreya-Regular.woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Alegreya';
+  src: url('../fonts/Alegreya-Italic.woff2'),
+       url('../fonts/Alegreya-Italic.woff');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Alegreya';
+  src: url('../fonts/Alegreya-Medium.woff2'),
+       url('../fonts/Alegreya-Medium.woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
 /* Redaction */
 @font-face {
   font-family: 'Redaction 35';
@@ -41,6 +66,14 @@
   font-weight: normal;
   font-style: italic;
 }
+@font-face {
+  font-family: 'Redaction 20';
+  src: url('../fonts/Redaction_20-Regular.woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* General selectors ----------------------------------------------------- */
 
 body {
   font-family: "Alegreya Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -53,7 +86,12 @@ p {
   /* hyphens: auto; */
 }
 
-/* header and footer areas ----------------------------------------------- */
+a {
+  font-weight: 500;
+}
+
+/* Header and footer areas ----------------------------------------------- */
+
 .side-blurb p {
   font-size: 17px;
   line-height: 20px;
@@ -61,13 +99,16 @@ p {
 }
 
 .menu a:link {
+  font-family: Alegreya;
   font-size: 18px;
   font-weight: 500;
   font-feature-settings: "smcp" on;
 }
 
-.social-links {
+.social-links a {
+  font-family: Alegreya;
   font-size: 16px;
+  font-weight: normal;
   font-feature-settings: "smcp" on;
 }
 
@@ -77,5 +118,21 @@ code {
 }
 
 footer {
-  font-feature-settings: "smcp" on;
+  font-family: Alegreya;
+  font-feature-settings: "smcp" on, "cpsp" on, "lnum" on;
+}
+
+/* Lists ----------------------------------------------------------------- */
+.list-post-title {
+  font-family: 'Redaction 20';
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 1.1em;
+  margin-bottom: 0.3em;
+}
+
+.list-post-description {
+  font-weight: normal;
+  font-size: 18.5px;
+  line-height: 1.19em;
 }
