@@ -3,9 +3,9 @@
 <div class="side-layout">
 
   <div class="aside-pane">
-    <a href="{{ "/" | relURL }}"><img src="{{ "/images/ninevoltXYZ-logo-light-theme.svg" | relURL }}"
-        alt="ninevolt.xyz logo" class="logo"></a>
-
+    <!-- <a href="{{ "/" | relURL }}"><img src="{{ "/images/ninevoltXYZ-logo-light-theme.svg" | relURL }}"
+        alt="ninevolt.xyz logo" class="logo"></a> -->
+    {{ partial "logo.html" . }}
     {{ partial "side-blurb.html" }}
 
     <nav>
@@ -27,7 +27,7 @@
 
   <main class="list-pane">
     {{if not .IsHome }}
-    <h1>{{ .Title | markdownify }}</h1>
+    <h1 class="hello">{{ .Title | markdownify }}</h1>
     {{ .Content }}
     {{ end }}
 

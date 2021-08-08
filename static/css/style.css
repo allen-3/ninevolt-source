@@ -9,7 +9,19 @@ body {
   background: #F9F9FA;
 }
 
-h2 {  /* override the “user agent stylesheet” */
+h1 { /* override the “user agent stylesheet” */
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+h2 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+h3 {
   margin-block-start: 0;
   margin-block-end: 0;
   margin-inline-start: 0;
@@ -21,7 +33,7 @@ a {
   text-decoration: none;
 }
 
-/* Header and footer areas ----------------------------------------------- */
+/* List panes ------------------------------------------------------------ */
 .side-layout {
   display: grid;
 }
@@ -43,7 +55,7 @@ img.logo {
   margin: 10px 0px;
 }
 
-.menu { 
+.menu {
   padding: 0;
   display: flex;
   flex-direction: column; 
@@ -125,7 +137,38 @@ img.logo {
   }
 }
 
-.article-meta, footer { text-align: center; }
+/* Single pages ---------------------------------------------------------- */
+.single-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 6px;
+
+  max-width: 602px;
+  margin: 20px auto 30px;
+  border-bottom: solid 1px #30363F;
+}
+
+.single-nav .logo {
+  max-width: 176px;
+}
+
+.single-nav .logo-link {
+  line-height: 0;
+}
+
+.single-nav-linkback {
+  align-self: flex-start;
+}
+
+.article-meta {
+  max-width: 602px;
+  margin: auto;
+}
+
+/* Footer ---------------------------------------------------------------- */
+
+footer { text-align: center; }
 .title { font-size: 1.1em; }
 
 footer {

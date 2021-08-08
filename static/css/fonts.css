@@ -90,7 +90,7 @@ a {
   font-weight: 500;
 }
 
-/* Header and footer areas ----------------------------------------------- */
+/* List panes ------------------------------------------------------------ */
 
 .side-blurb p {
   font-size: 17px;
@@ -102,14 +102,14 @@ a {
   font-family: Alegreya;
   font-size: 18px;
   font-weight: 500;
-  font-feature-settings: "smcp" on;
+  font-feature-settings: "smcp" on, "cpsp" on;
 }
 
 .social-links a {
   font-family: Alegreya;
   font-size: 16px;
   font-weight: normal;
-  font-feature-settings: "smcp" on;
+  font-feature-settings: "smcp" on, "cpsp" on;
 }
 
 code {
@@ -117,6 +117,28 @@ code {
   font-size: 85%;
 }
 
+/* Single pages ---------------------------------------------------------- */
+.single-nav-linkback {
+  font-family: Alegreya;
+  font-size: 18px;
+  font-feature-settings: "smcp" on, "cpsp" on;
+}
+
+.article-meta h1 {
+  font-family: 'Redaction 35';
+  font-weight: normal;
+  font-size: 38px;
+  line-height: 1.15em;
+  margin-bottom: 0.55em
+}
+
+.single-description {
+  font-family: Alegreya;
+  font-style: italic;
+  font-size: 20px;
+}
+
+/* Footer ---------------------------------------------------------------- */
 footer {
   font-family: Alegreya;
   font-feature-settings: "smcp" on, "cpsp" on, "lnum" on;
