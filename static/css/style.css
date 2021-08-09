@@ -99,9 +99,10 @@ img.logo {
 @media only screen and (min-width: 889px) {
   .side-layout {
     grid-template-columns: 4fr 7fr;
-    column-gap: 100px;
+    column-gap: 10%;
     max-width: 1000px;
     margin: 48px auto;
+    padding: 0 25px;
     /* background: red; */
   }
 }
@@ -117,7 +118,7 @@ img.logo {
   .side-layout {
     grid-template-rows: 314px auto;
     /* max-width: 1000px; */
-    row-gap: 40px;
+    row-gap: 64px;
     margin: 48px auto;
   }
 
@@ -133,7 +134,8 @@ img.logo {
 
   .menu {
     flex-direction: row;
-    justify-content: space-between;
+    /* margin: auto; */
+    justify-content: space-evenly;
   }
 }
 
@@ -194,6 +196,31 @@ hr {
 .list-post-description {
   margin: 0;
 }
+
+.list-page-title {
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 36px;
+}
+.list-page-title > span {
+  position: relative;
+  display: inline-block;
+}
+.list-page-title > span::before, .list-page-title > span::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  border-top: 1px solid;
+  width: 300px;
+  margin: 0 20px;
+}
+.list-page-title > span::before {
+  right: 100%;
+}
+.list-page-title > span::after {
+  left: 100%;
+}
+
 
 /* Code ------------------------------------------------------------------ */
 pre {

@@ -73,6 +73,10 @@
   font-style: normal;
 }
 
+:root {
+  --small-caps: "smcp" on, "cpsp" on
+}
+
 /* General selectors ----------------------------------------------------- */
 
 body {
@@ -141,10 +145,18 @@ code {
 /* Footer ---------------------------------------------------------------- */
 footer {
   font-family: Alegreya;
-  font-feature-settings: "smcp" on, "cpsp" on, "lnum" on;
+  font-feature-settings: var(--small-caps), "lnum" on;
 }
 
 /* Lists ----------------------------------------------------------------- */
+.list-page-title {
+  font-family: Alegreya;
+  font-size: 18px;
+  font-weight: normal;
+  text-transform: lowercase;
+  font-feature-settings: var(--small-caps);
+}
+
 .list-post-title {
   font-family: 'Redaction 20';
   font-weight: normal;

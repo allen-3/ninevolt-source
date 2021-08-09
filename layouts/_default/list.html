@@ -27,7 +27,7 @@
 
   <main class="list-pane">
     {{if not .IsHome }}
-    <h1 class="hello">{{ .Title | markdownify }}</h1>
+    <h1 class="list-page-title"><span>{{ .Title | markdownify }}</span></h1>
     {{ .Content }}
     {{ end }}
 
