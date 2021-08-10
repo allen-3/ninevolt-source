@@ -9,7 +9,14 @@ body {
   background: #F9F9FA;
 }
 
-h1 { /* override the “user agent stylesheet” */
+/* override the “user agent stylesheet” */
+p { 
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+h1 { 
   margin-block-start: 0;
   margin-block-end: 0;
   margin-inline-start: 0;
@@ -165,7 +172,12 @@ img.logo {
 
 .article-meta {
   max-width: 602px;
-  margin: auto;
+  margin: 0 auto 50px;
+}
+
+.single-main {
+  max-width: 602px;
+  margin: 0 auto 80px;
 }
 
 /* Footer ---------------------------------------------------------------- */

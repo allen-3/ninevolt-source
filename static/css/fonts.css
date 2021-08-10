@@ -84,10 +84,37 @@ body {
 }
 
 p {
-  font-size: 22px;
+  font-size: 20px;
   line-height: 28px;
-  margin-bottom: 18px;
+  margin-bottom: 0.9em;
   /* hyphens: auto; */
+}
+
+h2 {
+  font-family: 'Redaction 20';
+  font-size: 28px;
+  font-weight: normal;
+  line-height: 1.1em;
+  margin-bottom: 0.65em;
+}
+
+h3 {
+  font-family: 'Alegreya Sans';
+  font-size: 22px;
+  /* font-style: bold; */
+  font-weight: 500;
+  text-transform: lowercase;
+  text-align: center;
+  font-feature-settings: var(--small-caps);
+  margin-bottom: 0.65em;
+}
+
+p + h2 {
+  margin-top: 1.4em;
+}
+
+p + h3 {
+  margin-top: 1.5em;
 }
 
 a {
