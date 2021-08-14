@@ -37,7 +37,14 @@ h3 {
 
 a {
   color: #30363F;
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: #30363f33;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 1px;
+}
+a:hover {
+  text-decoration-color: #30363fbd;
+  transition: 100ms;
 }
 
 /* List panes ------------------------------------------------------------ */
@@ -168,6 +175,7 @@ img.logo {
 
 .single-nav-linkback {
   align-self: flex-start;
+  text-decoration: none;
 }
 
 .article-meta {
@@ -195,6 +203,8 @@ hr {
 }
 
 /* Lists ----------------------------------------------------------------- */
+.list-pane a {text-decoration: none;}
+
 .list-pane ul {
   margin: 0;
   padding: 0;

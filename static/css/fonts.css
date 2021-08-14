@@ -118,7 +118,10 @@ p + h3 {
 }
 
 a {
-  font-weight: 500;
+  font-family: Alegreya;
+  font-size: 19px;
+  /* font-weight: 500; */
+  font-feature-settings: var(--small-caps);
 }
 
 /* List panes ------------------------------------------------------------ */
@@ -172,7 +175,7 @@ code {
 /* Footer ---------------------------------------------------------------- */
 footer {
   font-family: Alegreya;
-  font-feature-settings: var(--small-caps), "lnum" on;
+  font-feature-settings: var(--small-caps);
 }
 
 /* Lists ----------------------------------------------------------------- */
@@ -189,11 +192,13 @@ footer {
   font-weight: normal;
   font-size: 32px;
   line-height: 1.1em;
-  margin-bottom: 0.3em;
+  margin-bottom: 0.4em;
 }
 
 .list-post-description {
+  font-family: 'Alegreya Sans';
   font-weight: normal;
   font-size: 18.5px;
-  line-height: 1.19em;
+  line-height: 1.25em;
+  font-feature-settings: "smcp" off, "cpsp" off;
 }

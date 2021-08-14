@@ -1,7 +1,7 @@
 ---
 title: "Lipsum"
 date: 2021-07-10T15:37:03-04:00
-draft: false
+draft: true
 categories: ["guide"]
 description: "Vivamus vulputate, velit id posuere iaculis, sapien dui finibus arcu, in tincidunt sem mi vel elit."
 ---
