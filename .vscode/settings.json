@@ -1,4 +1,11 @@
 {
     "editor.formatOnSave": true,
-    "zenMode.fullScreen": false
+    "zenMode.fullScreen": false,
+    "markdownlint.config": {
+        "no-inline-html": {
+            "allowed_elements": [
+                "kbd"
+            ]
+        }
+    }
 }

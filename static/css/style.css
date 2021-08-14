@@ -47,6 +47,19 @@ a:hover {
   transition: 100ms;
 }
 
+kbd {
+  font-family: 'Alegreya Sans';
+  font-size: 0.9em;
+  font-weight: 500;
+  padding: .1em .4em .25em;
+  margin: 0 .2em;
+  background-color: #eceef07a;
+  border: solid 1px;
+  border-color: #bfc4cd;
+  border-radius: 3px;
+  box-shadow: 0 -3px 0 #dee1e6 inset;
+}
+
 /* List panes ------------------------------------------------------------ */
 .side-layout {
   display: grid;
@@ -253,6 +266,16 @@ pre {
 }
 code { background: #f9f9f9; }
 pre code { background: none; }
+
+p > code {
+  font-size: 0.75em;
+  padding: 0.1em 0.3em;
+  margin: 0 0.2em;
+  background-color: #eceef0;
+  border-radius: 2px;
+  color: #213f6d;
+  /* font-size: 70%; */
+}
 
 /* Misc elements --------------------------------------------------------- */
 img, iframe, video { max-width: 100%; }

@@ -73,6 +73,20 @@
   font-style: normal;
 }
 
+/* Recursive */
+@font-face {
+  font-family: 'Rec Mono Linear';
+  src: url('../fonts/RecursiveMonoLnrSt-Regular.woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Rec Mono Linear';
+  src: url('../fonts/RecursiveMonoLnrSt-Italic.woff2');
+  font-weight: normal;
+  font-style: italic;
+}
+
 :root {
   --small-caps: "smcp" on, "cpsp" on
 }
@@ -146,11 +160,6 @@ a {
   font-feature-settings: "smcp" on, "cpsp" on;
 }
 
-code {
-  font-family: "Lucida Console", Monaco, monospace;
-  font-size: 85%;
-}
-
 /* Single pages ---------------------------------------------------------- */
 .single-nav-linkback {
   font-family: Alegreya;
@@ -201,4 +210,18 @@ footer {
   font-size: 18.5px;
   line-height: 1.25em;
   font-feature-settings: "smcp" off, "cpsp" off;
+}
+
+/* Code ------------------------------------------------------------------ */
+
+code {
+  font-family: 'Rec Mono Linear', 'Lucida Console', Monaco, monospace;
+  font-size: 85%;
+}
+
+p > code {
+  background-color: #eceef0;
+  border-radius: 2px;
+  color: #213f6d;
+  /* font-size: 70%; */
 }
