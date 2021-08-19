@@ -4,7 +4,9 @@
     "markdownlint.config": {
         "no-inline-html": {
             "allowed_elements": [
-                "kbd"
+                "kbd",
+                "span",
+                "aside"
             ]
         }
     }

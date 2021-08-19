@@ -1,3 +1,7 @@
+:root {
+  --small-caps: "smcp" on, "cpsp" on
+}
+
 /* Font definitions ------------------------------------------------------ */
 
 /* Alegreya Sans */
@@ -87,14 +91,22 @@
   font-style: italic;
 }
 
-:root {
-  --small-caps: "smcp" on, "cpsp" on
-}
-
 /* General selectors ----------------------------------------------------- */
 
 body {
   font-family: "Alegreya Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+main {
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+
+  -webkit-hyphenate-limit-before: 2;
+  -webkit-hyphenate-limit-after: 3;
+  /* PROPERTIES IN DRAFT STATUS */
+  /* -ms-hyphenate-limit-chars: auto 2 3; */
+  /* -ms-hyphenate-limit-lines: 3; */
 }
 
 p {
@@ -138,6 +150,11 @@ a {
   font-feature-settings: var(--small-caps);
 }
 
+span.abbr {
+  text-transform: lowercase;
+  font-feature-settings: var(--small-caps);
+}
+
 /* List panes ------------------------------------------------------------ */
 
 .side-blurb p {
@@ -150,14 +167,14 @@ a {
   font-family: Alegreya;
   font-size: 18px;
   font-weight: 500;
-  font-feature-settings: "smcp" on, "cpsp" on;
+  font-feature-settings: var(--small-caps);
 }
 
 .social-links a {
   font-family: Alegreya;
   font-size: 16px;
   font-weight: normal;
-  font-feature-settings: "smcp" on, "cpsp" on;
+  font-feature-settings: var(--small-caps);
 }
 
 /* Single pages ---------------------------------------------------------- */
@@ -219,9 +236,9 @@ code {
   font-size: 85%;
 }
 
-p > code {
-  background-color: #eceef0;
-  border-radius: 2px;
-  color: #213f6d;
-  /* font-size: 70%; */
+/* Misc elements --------------------------------------------------------- */
+
+aside {
+  font-family: Alegreya;
+  font-size: 16px;
 }
