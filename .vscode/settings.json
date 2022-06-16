@@ -9,5 +9,13 @@
                 "aside"
             ]
         }
-    }
+    },
+    // "[markdown]": {
+    //     "editor.quickSuggestions": true
+    // },
+    "emmet.excludeLanguages": [],
+    "emmet.includeLanguages": {
+        "markdown": "html"
+    },
+    "editor.smoothScrolling": true,
 }

@@ -1,5 +1,6 @@
 :root {
-  --small-caps: "smcp" on, "cpsp" on
+  --small-caps: "smcp" on, "cpsp" on;
+  --smcp-spacing-text: 0.03em;
 }
 
 /* Font definitions ------------------------------------------------------ */
@@ -153,6 +154,11 @@ a {
 span.abbr {
   text-transform: lowercase;
   font-feature-settings: var(--small-caps);
+  letter-spacing: var(--smcp-spacing-text);
+}
+
+p a {
+  letter-spacing: var(--smcp-spacing-text);
 }
 
 /* List panes ------------------------------------------------------------ */
@@ -168,6 +174,7 @@ span.abbr {
   font-size: 18px;
   font-weight: 500;
   font-feature-settings: var(--small-caps);
+  letter-spacing: var(--smcp-spacing-text);
 }
 
 .social-links a {
@@ -175,6 +182,7 @@ span.abbr {
   font-size: 16px;
   font-weight: normal;
   font-feature-settings: var(--small-caps);
+  letter-spacing: var(--smcp-spacing-text);
 }
 
 /* Single pages ---------------------------------------------------------- */
@@ -202,6 +210,7 @@ span.abbr {
 footer {
   font-family: Alegreya;
   font-feature-settings: var(--small-caps);
+  letter-spacing: var(--smcp-spacing-text);
 }
 
 /* Lists ----------------------------------------------------------------- */
@@ -211,6 +220,7 @@ footer {
   font-weight: normal;
   text-transform: lowercase;
   font-feature-settings: var(--small-caps);
+  letter-spacing: var(--smcp-spacing-text);
 }
 
 .list-post-title {

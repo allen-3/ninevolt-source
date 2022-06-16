@@ -302,9 +302,10 @@ th, td { padding: 5px; }
 /* thead, tfoot, tr:nth-child(even) { background: #eee; } */
 
 span.big-table-symbol {
-  font-size: 2em;
+  font-size: 2.4em;
   text-align: center;
-  margin-top: 10px;
+  position: relative;
+  top: 0.2em;
 }
 
 aside {
